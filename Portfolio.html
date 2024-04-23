@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/19aebf71e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="head">
+        <!-- <img src="Image/Tariq.jpg" alt="" class="head-img"> -->
+        <div class="container">
+            <nav>
+                <img src="Image/Balaji's logo.png" alt="Logo"
+                    style="width: 120px; position: absolute; left: 1300px; top: 10px;">
+                <ul>
+                    <li><a href="#" onclick="navigateToabout()"> About Me </a></li>
+                    <li><a href="#" onclick="navigateTomywork()"> Projects </a></li>
+                    <li><a href="#" onclick="navigateToContact()"> Contact </a></li>
+                </ul>
+            </nav>
+            <div class="head_text">
+                <h1>Hi i'm <span>Balaji V</span></h1>
+                <p>Full-Stack Developer</p>
+            </div>
+        </div>
+        <div class="img">
+            <img src="Image/Balaji_pic1.jpg" alt="" style="height: 550px;width: 600px;">
+        </div>
+        <!------------------------------------- about --------------------------------------->
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/Balaji2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem adipisci quam natus odio earum cum,
+                        sed dolores dolorem in minus eveniet iste optio culpa itaque aperiam, maxime eos commodi illum?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-tab" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tab-con skills" id="skill">
+                        <ul>
+                            <li><span>Programming Languages</span> <br><br> Core Java, JavaScript, HTML 5 and CSS 3</li>
+                            <li><span>Databases</span> <br><br>SQL, MySQL</li>
+                            <li><span>Development Tools</span> <br><br>MySQL Workbench, Visual Studio Code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-con" id="edu">
+                        <ul>
+                            <li><span>BE Computer Science and Engineering</span> <br><br> Sethu Institute Of Technology - 2024</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------My Work-------------------------------------- -->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub">
+                My Projects
+            </h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>ONLINE RETAIL MANAGEMENT SYSTEM</h2>
+                    <p>Created in MYSQL-WORKBENCH.  
+                        It is a database project which  includes 10 tables namely Customers,
+                        BankAccounts,Items,ItemClasses, Orders,OrderDetails,Discounts,Bills,Suppliers and SupplierItems</p>
+                    <a href="https://github.com/balaji4080/Online-Retail-Management-Database.git">learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Portfolio</h2>
+                    <p>I spearheaded the development of  PortFolio page using 
+                        HTML and CSS, demonstrating strong front-end skills.
+                        Crafted intuitive design elements for smooth navigation and 
+                        utilized innovative techniques for dynamic content presentation.
+                    </p>
+                    <a href="https://github.com/Tariq2708/SQL-Projects/tree/main/Product_inventory_Tracker">learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Netflix Clone</h2>
+                    <p>I spearheaded the development of a Netflix
+                        homepage clone using HTML and CSS,
+                        demonstrating strong front-end skills.
+                        Crafted intuitive design elements for smooth
+                        navigation and utilized innovative techniques for
+                        dynamic content presentation. This project
+                        underscores my commitment to delivering polished
+                        web solutions prioritizing user experience.
+                        </p>
+                    <a href="https://github.com/Tariq2708/SQL-Projects/tree/main/Product_inventory_Tracker">learn more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------contactMe------------------------------------ -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">                    
+                        <h1 class="sub">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i> <br>balajivelmurugan02@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone"></i> <br>+91 8870213796</p>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/balaji-v-423abb304"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>   
+                        <a href="Image/BalajiResume.pdf" download class="btn btn2" class="btn btn2">Download Resume</a>                 
+                </div>
+                <div class="contactright">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Portfolio.js"></script>
+</body>
+
+
+</html>
